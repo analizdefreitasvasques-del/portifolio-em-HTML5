@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ana Liz | Portfólio</title>
+  <meta name="description" content="Portfólio de Ana Liz: desenvolvimento web, eletrônica e projetos de tecnologia.">
+  <meta name="theme-color" content="#171717">
+
+  <link rel="icon" href="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+
+      <!-- EDITE: coloque sua logo em assets/logo.png (ela aparece sozinha) -->
+      <a class="brand" href="#inicio" aria-label="Ana Liz, ir para o início">
+        <span class="brand__logo ph" data-label="Logo">
+          <img src="assets/logo.png" alt="" width="44" height="44">
+        </span>
+        <span>Ana Liz</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menu</span>
+        <span class="nav-toggle__barra"></span>
+        <span class="nav-toggle__barra"></span>
+        <span class="nav-toggle__barra"></span>
+      </button>
+
+      <nav class="nav" id="menu-principal" aria-label="Navegação principal" data-spy>
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#inicio">Início</a></li>
+          <li><a class="nav__link" href="#sobre">Sobre mim</a></li>
+          <li><a class="nav__link" href="#habilidades">Habilidades</a></li>
+          <li><a class="nav__link" href="#projetos">Projetos</a></li>
+          <li><a class="nav__link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+      <div class="container hero__conteudo">
+        <p class="hero__ola">Eai, eu sou a</p>
+        <h1 class="hero__nome" id="hero-titulo">Ana Liz</h1>
+        <p class="hero__frase">Tento fazer desenvolvimento web e faço uns projetos eletrô nica por ai.</p>
+        <p class="hero__descricao">
+          Crio páginas organizadas e responsivas com HTML, CSS e JavaScript, e projetos
+          que unem programação e eletrônica.
+        </p>
+        <div class="hero__acoes">
+          <a class="btn btn--claro" href="#projetos">Conheça meus projetos</a>
+          <a class="btn btn--contorno-claro" href="#contato">Entre em contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <div class="sobre">
+          
+          <figure class="sobre__foto ph" data-label="Sua foto aqui (assets/perfil.jpg)">
+            <img src="assets/perfil.jpg" alt="Foto de Ana Liz">
+          </figure>
+
+          <article>
+            <h2 id="sobre-titulo">Sobre mim</h2>
+            <p class="sobre__bio">
+              Sou Ana Liz, estudante da área de tecnologia, com interesse em desenvolvimento
+              web e em projetos que combinam programação e eletrônica. Gosto de transformar
+              ideias em projetos funcionais, organizados e quase bem documentados.
+            </p>
+
+            <div class="sobre__blocos">
+              <section class="sobre__bloco" aria-labelledby="sobre-formacao">
+                <h3 id="sobre-formacao">Formação acadêmica</h3>
+                <p class="placeholder">Tecnico em eletrônica na Etec, previsão de Conclusão é em 12/2026, Tecnico em desenvolvimento de sistemas no senai, previsão de Conclusão é em 01/2028 </p>
+                
+              </section>
+
+              <section class="sobre__bloco" aria-labelledby="sobre-objetivos">
+                <h3 id="sobre-objetivos">Objetivos profissionais</h3>
+                <p>Atuar com desenvolvimento web, construindo interfaces claras, acessíveis e bem estruturadas.</p>
+              </section>
+
+              <section class="sobre__bloco" aria-labelledby="sobre-interesses">
+                <h3 id="sobre-interesses">Interesses</h3>
+                <ul class="lista-simples">
+                  <li>Desenvolvimento web e front-end</li>
+                  <li>Eletrônica e prototipagem</li>
+                  <li>Projetos que combinam software e hardware</li>
+                </ul>
+              </section>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--gelo" id="habilidades" aria-labelledby="habilidades-titulo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="habilidades-titulo">Habilidades</h2>
+          <p class="secao__intro">Tecnologias e competências que uso nos meus projetos.</p>
+        </header>
+
+        <div class="grade-habilidades">
+          <article class="card-habilidade">
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+
+          <article class="card-habilidade">
+            <h3>Versionamento</h3>
+            <ul class="chips">
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </article>
+
+          <article class="card-habilidade">
+            <h3>Eletrônica e projetos</h3>
+            <ul class="chips">
+              <li>Eletrônica</li>
+              <li>Desenvolvimento de projetos</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="projetos-titulo">Projetos</h2>
+          <p class="secao__intro"> alguns dos projetos que desenvolvi em sala de aula.</p>
+        </header>
+
+        <div class="grade-projetos">
+
+          <!-- Projeto 1 -->
+          <article class="card-projeto">
+            <figure class="card-projeto__capa ph" data-label="Capa do projeto 1">
+              <img src="assets/projetos/projeto-1.jpg" alt="Capa do Projeto 1" loading="lazy">
+            </figure>
+            <div class="card-projeto__corpo">
+              <h3>Arquitetura-MVC</h3>
+              <p class="card-projeto__descricao">Registro de Ativos : Adição de novos equipamentos especificando Tag de Patrimônio, Tipo (Desktop, Notebook ou Servidor) e Capacidade de RAM em GB.</p>
+              <ul class="card-projeto__tecnologias" aria-label="Tecnologias utilizadas">
+                <li>JS</li>
+               
+              </ul>
+              <a class="btn btn--escuro card-projeto__link"
+                 href="https://github.com/analizdefreitasvasques-del/Arquitetura-MVC"
+                 target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="sr-only">: Arquitetura-MVC (abre em nova aba)</span></a>
+            </div>
+          </article>
+
+          <!-- Projeto 2 -->
+          <article class="card-projeto">
+            <figure class="card-projeto__capa ph" data-label="Capa do projeto 2">
+              <img src="assets/projetos/projeto-2.jpg" alt="Capa do Projeto 2" loading="lazy">
+            </figure>
+            <div class="card-projeto__corpo">
+              <h3>Sistema-Acadêmico</h3>
+              <p class="card-projeto__descricao">O Sistema de Gestão Acadêmica permite o cadastramento, validação e consulta de alunos e professores em uma instituição ensino. O projeto foi estruturado com foco em boas práticas de POO, encapsulamento rígido, tratamento de erros centralizado e validações de domínio (como formato de CPF, e-mail, idade mínima e piso salarial).</p>
+              <ul class="card-projeto__tecnologias" aria-label="Tecnologias utilizadas">
+                <li>JS</li>
+              </ul>
+              <a class="btn btn--escuro card-projeto__link"
+                 href="https://github.com/SEU-USUARIO/REPOSITORIO-2"
+                 target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="sr-only">: Sistema-Acadêmico (abre em nova aba)</span></a>
+            </div>
+          </article>
+
+          <!-- Projeto 3 -->
+          <article class="card-projeto">
+            <figure class="card-projeto__capa ph" data-label="Capa do projeto 3">
+              <img src="assets/projetos/projeto-3.jpg" alt="Capa do Projeto 3" loading="lazy">
+            </figure>
+            <div class="card-projeto__corpo">
+              <h3>Biblioteca municipal</h3>
+              <p class="card-projeto__descricao">Um sistema desenvolvido em Node.js utilizando Módulos ES ( import/ export) para o gerenciamento de leitores, cadastro de itens (livros físicos e e-books) e cálculo de multas por atraso. O projeto aplica conceitos fundamentais de Programação Orientada a Objetos (POO) como encapsulamento, herança, polimorfismo e classes abstratas.</p>
+              <ul class="card-projeto__tecnologias" aria-label="Tecnologias utilizadas">
+                <li>JS</li>
+              </ul>
+              <a class="btn btn--escuro card-projeto__link"
+                 href="https://github.com/analizdefreitasvasques-del/biblioteca-municipal"
+                 target="_blank" rel="noopener noreferrer">Ver no GitHub<span class="sr-only">: biblioteca (abre 
+                  em nova aba)</span></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="secao secao--gelo" id="formacao" aria-labelledby="formacao-titulo">
+      <div class="container">
+        <header class="secao__cabecalho">
+          <h2 id="formacao-titulo">Formação e experiências</h2>
+          <p class="secao__intro">Trajetória acadêmica, cursos e experiências profissionais.</p>
+        </header>
+
+        <div class="tabela-wrap">
+          <table class="tabela">
+            <caption class="sr-only">Formação acadêmica, cursos e experiências profissionais</caption>
+            <thead>
+              <tr>
+                <th scope="col">Tipo</th>
+                <th scope="col">Formação ou experiência</th>
+                <th scope="col">Instituição</th>
+                <th scope="col">Período</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Formação acadêmica</th>
+                <td data-label="Formação ou experiência">Eletrônica</td>
+                <td data-label="Instituição">ETECAF</td>
+                <td data-label="Período">2024 – 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">Curso</th>
+                <td data-label="Formação ou experiência">inglês, adm e informática</td>
+                <td data-label="Instituição">STARTPRO</td>
+                <td data-label="Período">2023</td>
+              </tr>
+              <tr>
+                <th scope="row">Experiência profissional</th>
+                <td data-label="Formação ou experiência">Estágiario</td>
+                <td data-label="Instituição">Antec Sistemas</td>
+                <td data-label="Período">2025 – 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao" id="contato" aria-labelledby="contato-titulo">
+      <div class="container">
+        <div class="contato">
+          <div class="contato__info">
+            <h2 id="contato-titulo">Contato</h2>
+            <p class="secao__intro">Quer conversar sobre um projeto ou oportunidade? Preencha o formulário e envie sua mensagem.</p>
+          </div>
+
+        
+          <form class="form" id="form-contato" novalidate data-destino="analizdefreitasvasques@gmail.com" aria-describedby="form-aviso">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name"
+                     required minlength="2" maxlength="80" aria-describedby="nome-erro">
+              <p class="field__erro" id="nome-erro" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email"
+                     required maxlength="120" pattern="[^\s@]+@[^\s@]+\.[^\s@]{2,}"
+                     aria-describedby="email-erro">
+              <p class="field__erro" id="email-erro" hidden></p>
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="6"
+                        required minlength="10" maxlength="1000" aria-describedby="mensagem-erro"></textarea>
+              <p class="field__erro" id="mensagem-erro" hidden></p>
+            </div>
+
+            <p class="form__aviso" id="form-aviso">
+              Este site não tem servidor (backend). Ao enviar, seu aplicativo de e-mail abre com a
+              mensagem pronta para você confirmar o envio.
+            </p>
+
+            <button class="btn btn--escuro" type="submit">Enviar mensagem</button>
+            <p class="form__status" id="form-status" role="status" aria-live="polite" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="site-footer__nome">Ana Liz</p>
+        <p class="site-footer__copy">&copy; <span data-ano>2026</span> Ana Liz. Todos os direitos reservados.</p>
+      </div>
+
+        
+      <ul class="site-footer__links">
+        <li><a href="https://github.com/analizdefreitasvasques-del" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/ana-liz-de-freitas-ab7339352/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
